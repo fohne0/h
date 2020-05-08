@@ -1,0 +1,62 @@
+1: DOCTYPE written in html5
+2: root element of html page, open
+3: meta information, open(<head>)
+4: points to an external javascript file
+5: refresh button on wepage
+6: meta information, close(</head>)
+7: visable page element, open(<body>)
+
+9: Web page header title
+
+11: textarea, multi-line text input control, with defined size
+
+
+
+
+16: closed textarea
+17: play button that executes music box
+
+19: script section open
+20: document object created from play button line 17, using addEventListener and getElementById methods.
+
+22: Function myFunction() created, used to start program once play it hit.
+23: takes values stored from html text area box
+
+25: notes_parsed array created
+26: first for loop to traverse rows
+27: second for loop to traverse cols
+28: if statement to check if value == 'A'
+29: if true push 'A' to the back of array notes_parsed
+
+31: if statement to check if value == 'B'
+32: if true push 'B' to the back of array notes_parsed
+
+34: if statement to check if value == 'C'
+35: if true push 'C' to the back of array notes_parsed
+
+37: if statement to check if value == 'D'
+38: if true push 'D' to the back of array notes_parsed
+
+
+
+
+
+44: index_ms_offset set to 1000ms
+45: for loop to go through the entire length of notes_parsed
+
+47: if notes_parsed[x] == 'A'
+
+49: setTimeout after executing function (play door_chime.mp3, delay by index_ms_offset * index)
+50: if notes_parsed[x] == 'B'
+
+52: setTimeout after executing function (play lid_close_1.mp3, delay by index_ms_offset * index)
+53: if notes_parsed[x] == 'C'
+
+55: setTimeout after executing function (play lid_close_2.mp3, delay by index_ms_offset * index)
+56: if notes_parsed[x] == 'D'
+
+55: setTimeout after executing function (play lid_close_3.mp3, delay by index_ms_offset * index)
+
+
+
+62: var htmlTEMPLATE created 
